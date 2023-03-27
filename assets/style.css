@@ -1,11 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Ubuntu:wght@400;700&display=swap');
 
-main, body {
+:root {
+    --branco: #edebe7;
+    --azul-escuro: #212a64;
+    --azul-claro: #119beb;
+}
+
+body {
     height: 100vh;
     background-image: linear-gradient(aqua,#005eff);
     background-size: 100%;
     background-repeat: no-repeat;
 }
+
+/* Cabeçalho */
+
+.cabecalho {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--azul-escuro);
+    background-color: var(--branco);
+}
+
+.cabecalho__itens {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.cabecalho__itens a:hover {
+    color: var(--azul-claro);
+}
+
+.cabecalho__logo {
+    width: 80px;
+    height: 40px;
+    margin-right: 1em;
+}
+
+/* Página principal */
 
 .principal {
     display: flex;
@@ -16,38 +50,58 @@ main, body {
 
 .principal__texto {
     font-family: 'Ubuntu', sans-serif;
-    color: #edebe7;
+    color: var(--branco);
     text-align: center;
+    width: 700px;
 }
 
 .principal__texto__titulo {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 90px;
     font-weight: 700;
-    font-size: 70px;
+    color: var(--azul-escuro);
 }
 
 .principal__texto__paragrafo {
     padding: 1em 2em ;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .principal__texto__redes {
-    font-size: 28px;
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 38px;
     font-weight: 700;
     text-decoration-line: underline;
+    color: var(--azul-escuro);
+    margin-bottom: 1.5em;
 }
 
 .principal__botoes {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin: 1em;
     gap: 1em;
 }
 
 .principal__botoes a {
+    text-decoration: none;
+    color: var(--branco);
     display: flex;
+    width: 200px;
+    padding: 1em;
     align-items: center;
     justify-content: center;
+    gap: 10px;
+    border: solid 1px var(--branco);
+    border-radius: 20px;
+    font-size: 24px;
+}
+
+.principal__botoes a:hover {
+    color: var(--azul-escuro);
+    border-color: var(--azul-escuro);
 }
 
 .principal__botoes-logo {
