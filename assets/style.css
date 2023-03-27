@@ -7,7 +7,6 @@
 }
 
 body {
-    height: 100vh;
     background-image: linear-gradient(aqua,#005eff);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -48,6 +47,10 @@ body {
     padding: 1em 5em;
 }
 
+.principal__imagem {
+    display: none;
+}
+
 .principal__texto {
     font-family: 'Ubuntu', sans-serif;
     color: var(--branco);
@@ -57,24 +60,28 @@ body {
 
 .principal__texto__titulo {
     font-family: 'Dancing Script', sans-serif;
-    font-size: 90px;
+    font-size: 50px;
     font-weight: 700;
     color: var(--azul-escuro);
+    margin-top: 1.5em;
 }
 
 .principal__texto__paragrafo {
-    padding: 1em 2em ;
+    padding: 1em 0;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 20px;
+    width: 300px;
+    text-align: center;
 }
 
 .principal__texto__redes {
     font-family: 'Dancing Script', sans-serif;
-    font-size: 38px;
+    font-size: 30px;
     font-weight: 700;
     text-decoration-line: underline;
     color: var(--azul-escuro);
-    margin-bottom: 1.5em;
+    margin-bottom: .5em;
+    margin-top: 1.5em;
 }
 
 .principal__botoes {
@@ -90,13 +97,13 @@ body {
     color: var(--branco);
     display: flex;
     width: 200px;
-    padding: 1em;
+    padding: .5em;
     align-items: center;
     justify-content: center;
     gap: 10px;
     border: solid 1px var(--branco);
-    border-radius: 20px;
-    font-size: 24px;
+    border-radius: 10px;
+    font-size: 14px;
 }
 
 .principal__botoes a:hover {
@@ -108,4 +115,70 @@ body {
     align-self: center;
     border-radius: 5px;
     height: 32px;
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.video__titulo {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration-line: underline;
+    color: var(--azul-escuro);
+    margin-bottom: .2em;
+    margin-top: 1.5em;
+}
+
+.video__embed {
+    margin: 1em;
+    width: 80%;
+}
+
+@media (min-width: 1440px) {
+    .principal__imagem {
+        display: flex;
+    }
+
+    .principal__texto {
+        font-family: 'Ubuntu', sans-serif;
+        color: var(--branco);
+        text-align: center;
+        width: 700px;
+    }
+
+    .principal__texto__paragrafo {
+        padding: 1em 2em ;
+        font-weight: 400;
+        font-size: 30px;
+    }
+
+    .principal__texto__redes {
+        font-family: 'Dancing Script', sans-serif;
+        font-size: 38px;
+        font-weight: 700;
+        text-decoration-line: underline;
+        color: var(--azul-escuro);
+        margin-bottom: 1.5em;
+    }
+
+    .principal__botoes a {
+        text-decoration: none;
+        color: var(--branco);
+        display: flex;
+        width: 200px;
+        padding: 1em;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border: solid 1px var(--branco);
+        border-radius: 20px;
+        font-size: 24px;
+    }
+
+    
 }
