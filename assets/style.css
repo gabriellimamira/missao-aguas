@@ -7,7 +7,7 @@
 }
 
 body {
-    background-image: linear-gradient(aqua,#005eff);
+    background-image: linear-gradient(aqua,#005eff,#042154);
     background-size: 100%;
     background-repeat: no-repeat;
 }
@@ -19,7 +19,7 @@ body {
     font-size: 20px;
     font-weight: 700;
     color: var(--azul-escuro);
-    background-color: var(--branco);
+    background-color: #FFFFFF;
 }
 
 .cabecalho__itens {
@@ -121,7 +121,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
 }
 
 .video__titulo {
@@ -137,6 +137,16 @@ body {
 .video__embed {
     margin: 1em;
     width: 80%;
+}
+
+.rodape {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+
+.rodape__logo {
+    width: 20%;
 }
 
 @media (min-width: 1440px) {
