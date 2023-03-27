@@ -1,6 +1,57 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+main, body {
     height: 100vh;
     background-image: linear-gradient(aqua,#005eff);
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
+.principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em 5em;
+}
+
+.principal__texto {
+    font-family: 'Ubuntu', sans-serif;
+    color: #edebe7;
+    text-align: center;
+}
+
+.principal__texto__titulo {
+    font-weight: 700;
+    font-size: 70px;
+}
+
+.principal__texto__paragrafo {
+    padding: 1em 2em ;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.principal__texto__redes {
+    font-size: 28px;
+    font-weight: 700;
+    text-decoration-line: underline;
+}
+
+.principal__botoes {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    gap: 1em;
+}
+
+.principal__botoes a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.principal__botoes-logo {
+    align-self: center;
+    border-radius: 5px;
+    height: 32px;
+}
