@@ -16,7 +16,7 @@ body {
 
 .cabecalho {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 20px;
+    font-size: 12px;
     font-weight: 700;
     color: var(--azul-escuro);
     background-color: #FFFFFF;
@@ -24,9 +24,30 @@ body {
 
 .cabecalho__itens {
     display: flex;
-    gap: 20px;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    gap: 5px;
     align-items: center;
 }
+
+.cabecalho__menu__drop {
+    border: none;
+}
+
+.cabecalho__menu__itens {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.show {
+    display: block;
+}
+
+
 
 .cabecalho__itens a:hover {
     color: var(--azul-claro);

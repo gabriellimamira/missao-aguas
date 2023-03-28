@@ -7,15 +7,31 @@
     <title>Missão Águas</title>
     <link rel="stylesheet" href="assets/reset.css">
     <link rel="stylesheet" href="assets/style.css">
-
+    <script>
+        function funcao_drop() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+    </script>
 </head>
 <body>
+    
     <header class="cabecalho">
         <nav class="cabecalho__itens">
             <img class="cabecalho__logo" src="assets/img/Logo Missão Águas.jpg">
-            <a>Home</a>
-            <a>Sobre Nós</a>
-        </nav>
+            
+
+            <div class="cabecalho__menu">
+                <button onclick="funcao_drop()" class="cabecalho__menu__drop"><img src="assets/img/Menu.svg"></button>
+                <div id="myDropdown" class="cabecalho__menu__itens">
+                    <a>Home</a>
+                    <a>Quem Somos</a>
+                    <a>Sala da Alma</a>
+                    <a>Blog</a>
+                </div>
+            </div>
+
+         </nav>
+
     </header>
 
     
