@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Ubuntu:wght@400;700&display=swap');
 
 :root {
-    --branco: #edebe7;
+    --branco: #f2f2f2;
     --azul-escuro: #212a64;
     --azul-claro: #119beb;
 }
@@ -19,7 +19,7 @@ body {
     font-size: 12px;
     font-weight: 700;
     color: var(--azul-escuro);
-    background-color: #f2f2f2;
+    background-color: var(--branco);
 }
 
 .cabecalho__itens {
@@ -38,7 +38,7 @@ body {
 .cabecalho__menu__itens {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: var(--branco);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -99,6 +99,10 @@ body {
     font-size: 50px;
     font-weight: 700;
     color: var(--azul-escuro);
+    margin-top: .5em;
+}
+
+.principal__texto__banner {
     margin-top: 1.5em;
 }
 
@@ -176,7 +180,7 @@ body {
 }
 
 .rodape {
-    background-color: #FFFFFF;
+    background-color: var(--branco);
     display: flex;
     justify-content: center;
 }
