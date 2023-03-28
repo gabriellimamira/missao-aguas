@@ -19,15 +19,16 @@ body {
     font-size: 12px;
     font-weight: 700;
     color: var(--azul-escuro);
-    background-color: #FFFFFF;
+    background-color: #f2f2f2;
 }
 
 .cabecalho__itens {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 5px;
     align-items: center;
+    padding: 0 1em;
 }
 
 .cabecalho__menu__drop {
@@ -41,6 +42,20 @@ body {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+}
+
+.cabecalho__menu__itens__drop {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 1em;
+    font-size: 30px;
+}
+
+.cabecalho__menu__itens__drop a {
+    text-decoration: none;
+    color: var(--azul-escuro);
+    text-decoration: underline;
 }
 
 .show {
@@ -101,7 +116,7 @@ body {
     font-weight: 700;
     text-decoration-line: underline;
     color: var(--azul-escuro);
-    margin-bottom: .5em;
+    margin-bottom: 1em;
     margin-top: 1.5em;
 }
 
